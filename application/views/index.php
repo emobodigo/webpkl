@@ -105,16 +105,16 @@
 
                                             <!-- Left and right controls -->
                                             <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-    <span class="glyphicon glyphicon-chevron-left"></span>
+    <span class="icon-prev"></span>
     <span class="sr-only">Previous</span>
   </a>
                                             <a class="right carousel-control" href="#myCarousel" data-slide="next">
-    <span class="glyphicon glyphicon-chevron-right"></span>
+    <span class="icon-next"></span>
     <span class="sr-only">Next</span>
   </a>
                                         </div>
                                     </div>
-                                    <div class="col-md-7 copy">
+                                    <div class="col-md-7 copy" id="TeksUtama">
                                         <img src="<?php echo base_url() ?>/images/kominfo.png" alt="Gambar logo kominfo" class="img-responsive" style="height: 200px">
                                         <h1>Menyalurkan segala informasi.</h1>
                                         <p>Media informasi masyarakat dan pemerintah, kunjungi halaman kami untuk lebih banyak informasi.</p>
@@ -136,26 +136,27 @@
                 <div class="col-md-1 col-sm-0 col-xs-0"></div>
                 <div class="col-md-7 col-sm-12 col-xs-12" id="section2">
                     <?php 
-                        $div1 = array_slice($all_data,0, 8, true);
+                        $div1 = array_slice($all_data,0, 11, true);
                         foreach ($div1 as $row){ ?>
                     <?php
                             $image = !empty($row->foto1) ? $row->foto1 : "/images/default.png";
                         ?>
                         <div class="list-group">
-                            <a href="<?php echo site_url("berita/showBerita/") ?><?php echo $row->iddata ?>" class="list-group-item list-group-item-action flex-column align-items-start" style="padding: 10px 0;">
+                            <a href="<?php echo site_url("berita/showBerita/") ?><?php echo $row->iddata ?>" class="list-group-item list-group-item-action flex-column align-items-start">
                                 <div class="row" style="padding: 5px 5px 5px 5px">
                                     <div class="col-md-3 col-sm-3 col-xs-5">
-                                        <img src="<?php echo base_url('upload/'. $image) ?>" style="height:130px; width: 130px;">
+                                        <img src="<?php echo base_url('upload/'. $image) ?>" class="img-responsive shadow">
                                     </div>
                                     <div class="col-md-9 col-sm-9 col-xs-7">
                                         <div class="d-flex w-100 justify-content-between">
-                                            <h3 class="mb-1">
-                                                <?php echo $row->judul; ?>
+                                            <h3 class="mb-1" style="font-family: 'Roboto', Arial, sans-serif;">
+												<?php echo $row->judul; ?>
+												<br>
+												<small><?php echo $row->tglposting; ?></small>
+												<br>
+												<small><?php echo $row->deskripsi; ?></small>
                                             </h3>
-                                            <small><?php echo $row->tglposting; ?></small>
                                         </div>
-                                        <p class="mb-1">
-                                            <?php echo $row->deskripsi; ?>
                                     </div>
                                 </div>
                             </a>

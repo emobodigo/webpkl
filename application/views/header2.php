@@ -68,13 +68,30 @@
 
 
         <nav class="gtco-nav" role="navigation">
-            <div class="gtco-container">
+            
+            <div class="gtco-container-nav">
 
-                <div class="row">
-                    <div class="col-sm-2 col-xs-12">
-                        <div id="gtco-logo"><a href="<?php echo base_url() ?>"><img src="<?php echo base_url() ?>/images/Malang.png" alt="Free HTML5 Website Template by GetTemplates.co" style="height: 40px; width: 60px;"></a></div>
+				<div class="row">
+					<div class="col-md-9 col-xs-9 col-sm-9">
+                        <div id="gtco-logo"><a href="<?php echo base_url() ?>"><img src="<?php echo base_url() ?>/images/Malang.png"  style="height: 40px; width: 60px;"></a></div>
                     </div>
-                    <div class="col-xs-10 text-right menu-1" >
+					<div class="gtco-contact">
+						<div class="gtco-social-icons">
+							<a href="<?php echo base_url() ?>"><img style="witdh: 40px; height: 40px; margin-right: 5px" src="<?php echo base_url() ?>/images/Facebook.png" ></a>
+							<a href="<?php echo base_url() ?>"><img style="witdh: 40px; height: 40px; margin-right: 5px" src="<?php echo base_url() ?>/images/Twitter.png" ></a>
+							<a href="<?php echo base_url() ?>"><img style="witdh: 40px; height: 40px; margin-right: 5px" src="<?php echo base_url() ?>/images/Google+.png" ></a>
+							<a href="<?php echo base_url() ?>"><img style="witdh: 40px; height: 40px; margin-right: 5px" src="<?php echo base_url() ?>/images/Youtube.png" ></a>
+							<a href="<?php echo base_url() ?>"><img style="witdh: 40px; height: 40px; margin-right: 5px" src="<?php echo base_url() ?>/images/Linkedin.png" ></a>
+							
+						</div>
+					
+						
+					</div>
+				</div>
+			</div>
+			<div class="gtco-nav-link">
+                <div class="row">
+                    <div class="col-xs-12 col-md-12 col-sm-12 text-center menu-1">
                         <ul>
                             <?php foreach($menus as $row) { ?>
                             <?php $coba = $row->punyasub; 
@@ -105,8 +122,8 @@
                         </ul>
                     </div>
                 </div>
-
-            </div>
+			</div>
+            
         </nav>
 
     

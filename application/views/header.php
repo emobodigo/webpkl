@@ -11,10 +11,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Web Kominfo New</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Free HTML5 Website Template by gettemplates.co" />
-    <meta name="keywords" content="free website templates, free html5, free template, free bootstrap, free website template, html5, css3, mobile first, responsive" />
-    <meta name="author" content="gettemplates.co" />
-
+    
     <!-- Facebook and Twitter integration -->
     <meta property="og:title" content="" />
     <meta property="og:image" content="" />
@@ -46,6 +43,7 @@
 
     <!-- Theme style  -->
     <link rel="stylesheet" href="<?php echo base_url() ?>/css/style.css">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
 
     <!-- Modernizr JS -->
     <script src="<?php echo base_url() ?>/js/modernizr-2.6.2.min.js"></script>
@@ -61,15 +59,33 @@
     <div class="gtco-loader"></div>
 
 
-        <nav class="gtco-nav " role="navigation">
+        <nav class="gtco-nav" role="navigation">
             
-            <div class="gtco-container">
+            <div class="gtco-container-nav">
 
+				<div class="row">
+					<div class="col-md-9 col-xs-9 col-sm-9">
+						<div id="gtco-logo">
+							<a href="<?php echo base_url() ?>"><img src="<?php echo base_url() ?>/images/Malang.png"  style="height: 40px; width: 60px;"></a>
+						</div>
+					</div>
+					<div class="gtco-contact">
+						<div class="gtco-social-icons">
+							<a href="<?php echo base_url() ?>"><img  src="<?php echo base_url() ?>/images/Facebook.png" ></a>
+							<a href="<?php echo base_url() ?>"><img  src="<?php echo base_url() ?>/images/Twitter.png" ></a>
+							<a href="<?php echo base_url() ?>"><img  src="<?php echo base_url() ?>/images/Google+.png" ></a>
+							<a href="<?php echo base_url() ?>"><img  src="<?php echo base_url() ?>/images/Youtube.png" ></a>
+							<a href="<?php echo base_url() ?>"><img  src="<?php echo base_url() ?>/images/Linkedin.png" ></a>
+							
+						</div>
+					
+						
+					</div>
+				</div>
+			</div>
+			<div class="gtco-nav-link">
                 <div class="row">
-                    <div class="col-md-2 col-xs-2 col-sm-2">
-                        <div id="gtco-logo"><a href="<?php echo base_url() ?>"><img src="<?php echo base_url() ?>/images/Malang.png" alt="Free HTML5 Website Template by GetTemplates.co" style="height: 40px; width: 60px;"></a></div>
-                    </div>
-                    <div class="col-xs-10 col-md-10 col-sm-10 text-right menu-1">
+                    <div class="col-xs-12 col-md-12 col-sm-12 text-center menu-1">
                         <ul>
                             <?php foreach($menus as $row) { ?>
                             <?php $coba = $row->punyasub; 
@@ -100,8 +116,8 @@
                         </ul>
                     </div>
                 </div>
-
-            </div>
+			</div>
+            
         </nav>
 
     

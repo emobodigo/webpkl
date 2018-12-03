@@ -523,7 +523,8 @@ p {
 @media (min-width: 768px) {
   .lead {
     font-size: 21px;
-  }
+	}
+	
 }
 
 small,
@@ -540,6 +541,8 @@ mark,
 .text-left {
   text-align: left;
 }
+
+
 
 .text-right {
   text-align: right;
@@ -4690,10 +4693,10 @@ a.thumbnail.active {
 .list-group-item {
   position: relative;
   display: block;
-  padding: 10px 15px;
+  padding: 10px 10px;
   margin-bottom: -1px;
   background-color: #fff;
-  border: 1px solid #ddd;
+  
 }
 .list-group-item:first-child {
   border-top-right-radius: 4px;
@@ -5453,7 +5456,8 @@ button.close {
   .modal-dialog {
     width: 600px;
     margin: 30px auto;
-  }
+	}
+	
 
   .modal-content {
     -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
@@ -5726,8 +5730,8 @@ button.close {
 
 .carousel {
   position: relative;
-  border-radius: 15px 15px 15px 15px;
-  overflow: hidden;
+	overflow: hidden;
+
 }
 
 .carousel-inner {
@@ -5746,7 +5750,6 @@ button.close {
 .carousel-inner > .item > a > img {
   display: block;
   max-width: 100%;
-  height: auto;
   line-height: 1;
 }
 @media all and (transform-3d), (-webkit-transform-3d) {
@@ -5897,7 +5900,6 @@ button.close {
   margin: 1px;
   text-indent: -999px;
   border: 1px solid #fff;
-  border-radius: 10px;
   cursor: pointer;
   background-color: #000 \9;
   background-color: transparent;
@@ -5930,8 +5932,8 @@ button.close {
   .carousel-control .glyphicon-chevron-right,
   .carousel-control .icon-prev,
   .carousel-control .icon-next {
-    width: 30px;
-    height: 30px;
+    width: 70px;
+    height: 70px;
     margin-top: -15px;
     font-size: 30px;
   }

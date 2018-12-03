@@ -89,7 +89,7 @@
                             <?php echo $row->judul ?>
                         </h1>
 
-                        <hr>
+                        <hr style="border-color: #17B794">
 
                         <!-- Date/Time -->
                         <p>Updated on
@@ -202,7 +202,7 @@ $image = !empty($row->foto1) ? $row->foto1 : "/images/default.png";
                                                 <div class="overlay">
                                                     <i class="ti-arrow-top-right"></i>
                                                     <div class="copy">
-                                                        <h3><?php echo $row->judul;?></h3>
+                                                        <h3 ><?php echo $row->judul;?></h3>
                                                         
                                                     </div>
                                                 </div>
@@ -220,13 +220,13 @@ $image = !empty($row->foto1) ? $row->foto1 : "/images/default.png";
                             </div>
                         </div>
                     </div>
-                    <hr>
+                    <hr style="border-color: #17B794">
                     <aside id="categories-3" class="widget widget_categories" style="">
-                        <h1 class="widget-title">Statistik</h1>
+						<h1 class="widget-title">Statistik</h1>
+						
                         <div align="center">
-                            <div style="margin-top:6px; text-align:left"><img src="<?php echo base_url()?>/images/visitor1.png"  style="width:28px; height:28px;" align="absmiddle"> Pengunjung hari ini : <strong><?php echo $online ?></strong> <br>
+                            <div style="margin-top:3px; text-align:left"><img src="<?php echo base_url()?>/images/visitor1.png"  style="width:28px; height:28px;" align="absmiddle"> Pengunjung hari ini : <strong><?php echo $online ?></strong> <br>
                                 <img src="<?php echo base_url()?>/images/visitor.png"  style="width:28px; height:28px;" align="absmiddle"> Total pengunjung : <strong><?php echo $h; ?></strong> <br>
-                                <img src="<?php echo base_url()?>/images/hits.png"  style="width:28px; height:28px;" align="absmiddle"> Hits hari ini : <strong><?php echo $hits ?></strong> <br>
                                 <!-- BEGIN: Powered by Supercounters.com -->
 <img src="<?php echo base_url()?>/images/browser.png"  style="width:28px; height:28px;" align="absmiddle"> Pengunjung Online : &nbsp;<script type="text/javascript" src="//widget.supercounters.com/ssl/online_i.js"></script><script type="text/javascript">sc_online_i(1507101,"00000","#46b8da");</script><br><noscript><a href="http://www.supercounters.com/">Free Online Counter code</a></noscript>
 

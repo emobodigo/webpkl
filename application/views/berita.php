@@ -82,17 +82,21 @@
                                     <?php
 $image = !empty($row->foto1) ? $row->foto1 : "/images/default.png";
 ?>
-                                        <img src="<?php echo base_url('upload/'. $image) ?>" style="height:130px; width: 130px;">
+                                        <img src="<?php echo base_url('upload/'. $image) ?>" class="img-responsive">
                                 </div>
                                 <div class="col-md-9  col-sm-9 col-xs-7">
                                     <div class="d-flex w-100 justify-content-between">
-                                        <h4 class="mb-1">
-                                            <?php echo $row->judul; ?>
+                                        <h4 class="mb-1" style="font-family: 'Roboto', Arial, sans-serif;">
+											<?php echo $row->judul; ?>
+											<br>
+											<small><?php echo $row->tglposting; ?></small>
+											<br>
+											<small><?php echo $row->deskripsi; ?></small>
                                         </h4>
-                                        <small><?php echo $row->tglposting; ?></small>
+                                        
                                     </div>
                                     <p class="mb-1">
-                                        <?php echo $row->deskripsi; ?>
+                                        
                                     </p>
                                 </div>
                             </div>
@@ -124,13 +128,13 @@ $image = !empty($row->foto1) ? $row->foto1 : "/images/default.png";
                                         <p style="font-weight:bold; margin-bottom:0;">
                                             <?php echo $row->tanggal; ?>
                                         </p>
-                                        <p style="margin-bottom:0; text-justify">
+                                        <p style="margin-bottom: 0px; text-align: justify; font-family: 'Roboto', Arial, sans-serif;">
                                             <?php echo $row->pesan; ?>
                                         </p>
                                         <p style="color:#0289ff; margin-bottom:0;">
                                             <?php echo $row->email; ?>
                                         </p>
-                                        <hr>
+                                        <hr style="border-color: #17B794">
                                     </div>
                                     <?php } ?>
                                     <a href="<?php echo site_url(" interaksi ") ?>" class="btn btn-info">Lihat lebih dari Buku Tamu <i class=" fa fa-chevron-right"></i></a>
@@ -138,13 +142,12 @@ $image = !empty($row->foto1) ? $row->foto1 : "/images/default.png";
                             </div>
                         </div>
                     </div>
-                    <hr>
+                    <hr style="border-color: #17B794">
                     <aside id="categories-3" class="widget widget_categories col-md-12" style="">
                         <h1 class="widget-title">Statistik</h1>
                         <div align="center">
                             <div style="margin-top:6px; text-align:left"><img src="<?php echo base_url()?>/images/visitor1.png" style="width:28px; height:28px;" align="absmiddle"> Pengunjung hari ini : <strong><?php echo $online ?></strong> <br>
                                 <img src="<?php echo base_url()?>/images/visitor.png" style="width:28px; height:28px;" align="absmiddle"> Total pengunjung : <strong><?php echo $h; ?></strong> <br>
-                                <img src="<?php echo base_url()?>/images/hits.png" style="width:28px; height:28px;" align="absmiddle"> Hits hari ini : <strong><?php echo $hits ?></strong> <br>
                                 <!-- BEGIN: Powered by Supercounters.com -->
                                 <img src="<?php echo base_url()?>/images/browser.png" style="width:28px; height:28px;" align="absmiddle"> Pengunjung Online : &nbsp;
                                 <script type="text/javascript" src="//widget.supercounters.com/ssl/online_i.js"></script>

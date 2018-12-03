@@ -43,7 +43,7 @@ spl_autoload_register('app_lib');
 | a PHP script and you can easily do that on your own.
 |
 */
-$config['base_url'] = 'http://localhost/webpkl/';
+$config['base_url'] = 'http://localhost/webpkl-dev/';
 
 /*
 |--------------------------------------------------------------------------

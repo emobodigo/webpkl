@@ -19,6 +19,23 @@ body {
   background: #fff;
 }
 
+.dept {
+	font-family: "Simplifica", Arial, sans-serif;
+	font-weight: bold;
+}
+
+#TeksUtama {
+	display: block;
+}
+
+#TeksUtama img {
+	display: block;
+	margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+
 #page {
   position: relative;
   overflow-x: hidden;
@@ -89,7 +106,20 @@ h1, h2, h3, h4, h5, h6, figure {
   position: relative;
   margin: 0 auto;
   padding-left: 15px;
-  padding-right: 15px;
+	padding-right: 15px;
+	padding-bottom: 10px;
+	padding-top: 10px;
+}
+
+
+.gtco-container-nav {
+  max-width: 1140px;
+  position: relative;
+  margin: 0 auto;
+  padding-left: 15px;
+	padding-right: 15px;
+	padding-bottom: 10px;
+	padding-top: 10px;
 }
 
 .gtco-nav {
@@ -98,14 +128,54 @@ h1, h2, h3, h4, h5, h6, figure {
   margin: 0;
   padding: 0;
   width: 100%;
-  padding: 10px 0;
+  padding: 0px 0;
   z-index: 1001;
   background: #fff;
 }
+
+.img-dekstop{
+	height: auto;
+	max-width: 100%;
+	margin-right: 5px;
+}
+
+.gtco-nav-link {
+  position: relative;
+  top: 0;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  padding: 10px 0;
+  z-index: 1001;
+	background: #212121;
+	font-family: "Simplifica", Arial, sans-serif;
+}
+
+.font-berita h3 {
+	font-family: 'Roboto', Arial, sans-serif;
+}
+
 @media screen and (max-width: 768px) {
   .gtco-nav {
     padding: 10px 0;
-  }
+	}
+	
+	.gtco-nav-link{
+		display: none;
+	}
+
+	.gtco-social-icons a img{
+		display: none;
+	}
+
+	#TeksUtama {
+		display: block;
+		text-align: center;
+	}
+	#TeksUtama img {
+		display: block;
+		
+	}
 }
 .gtco-nav #gtco-logo {
   font-size: 20px;
@@ -117,10 +187,12 @@ h1, h2, h3, h4, h5, h6, figure {
 .gtco-nav #gtco-logo em {
   color: #17B794;
 }
+
 @media screen and (max-width: 768px) {
   .gtco-nav .menu-1, .gtco-nav .menu-2 {
     display: none;
-  }
+	}
+	
 }
 .gtco-nav ul {
   padding: 0;
@@ -264,7 +336,13 @@ h1, h2, h3, h4, h5, h6, figure {
 @media screen and (max-width: 480px) {
   #gtco-header .text-left {
     text-align: center !important;
-  }
+	}
+	.gtco-nav-link{
+		display: none;
+	}
+	.gtco-social-icons a img{
+		display: none;
+	}
 }
 @media screen and (max-width: 480px) {
   #gtco-header .btn {
@@ -747,6 +825,13 @@ h1, h2, h3, h4, h5, h6, figure {
 .gtco-social-icons li a i {
   font-size: 20px;
 }
+
+.gtco-social-icons a img {
+	height: 40px;
+	width: 40px;
+	margin-right: 5px;
+}
+
 
 .gtco-contact-info {
   margin-bottom: 30px;
